@@ -1,0 +1,8 @@
+[submodule "third_party/yaggo"]
+	path = third_party/yaggo
+	url = https://github.com/peterhj/yaggo.git
+	branch = master
+[submodule "third_party/Jellyfish"]
+	path = third_party/Jellyfish
+	url = https://github.com/peterhj/Jellyfish.git
+	branch = master
