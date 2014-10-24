@@ -5,6 +5,8 @@ set -e
 # - g++-4.x
 # - boost, blat (for AMOS)
 
+mkdir -p /usr/local/pacbio
+
 cd third_party
 
 cd yaggo
