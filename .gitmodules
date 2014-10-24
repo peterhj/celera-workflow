@@ -6,3 +6,7 @@
 	path = third_party/Jellyfish
 	url = https://github.com/peterhj/Jellyfish.git
 	branch = master
+[submodule "third_party/amos"]
+	path = third_party/amos
+	url = https://github.com/peterhj/amos.git
+	branch = master
