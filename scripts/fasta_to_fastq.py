@@ -23,6 +23,8 @@ class FastaToFastq(object):
           current_seq = []
         elif current_seq_name is not None:
           current_seq.append(line.strip())
+      if current_seq_name is not None:
+        seqs.append((current_seq_name, "".join(current_seq)))
 
     fastq_path = fasta_path[:-1] + "q"
 

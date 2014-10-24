@@ -16,7 +16,7 @@ ILLUMINA_2_FASTQ_PATH="${ROOT_PATH}/illumina_2.fastq"
 ILLUMINA_FRG_PATH="${ROOT_PATH}/illumina.frg"
 
 # See: <http://wgs-assembler.sourceforge.net/wiki/index.php/FastqToCA>.
-
+#
 # This will make a frg files for the libraries.
 # Both fastq sets (pacbio and illumina) use sanger style phred scores
 # (this can be seen by the '#' and '+' characters).
@@ -27,7 +27,7 @@ fastqToCA -insertsize 400 75 -technology illumina-long -libraryname illumina -ma
 #
 # pacBioToCA needs AMOS. Mostly compiles as intended (needs a minor patch).
 pacBioToCA -length 500 -partitions 200 -t 1 -l pacbio_ec -s "${EC_SPEC_PATH}" -fastq "${PACBIO_FASTQ_PATH}" "${ILLUMINA_FRG_PATH}"
-rm -r temppacbio_ec
+rm -rf temppacbio_ec
 
 # See: <http://wgs-assembler.sourceforge.net/wiki/index.php/RunCA>.
 mkdir -p "${RESULTS_PATH}"
