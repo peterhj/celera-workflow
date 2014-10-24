@@ -10,3 +10,7 @@
 	path = third_party/amos
 	url = https://github.com/peterhj/amos.git
 	branch = master
+[submodule "third_party/wgs-assembler"]
+	path = third_party/wgs-assembler
+	url = https://github.com/peterhj/wgs-assembler.git
+	branch = master
