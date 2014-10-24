@@ -13,6 +13,7 @@ TODO
 
 In theory, it suffices to run:
 
+    git submodule update --init
     ./install_third_party.sh
     ./install_downloads.sh
 
